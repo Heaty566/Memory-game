@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" rel="script" src="./src/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="game-title">
+            <i class="fas fa-gamepad"></i>
+            <h1>Memory Game</h1>
+    </div>
+
+    <div class="game-body">
+        <table>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-0">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-1">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-2">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-3">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-4">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-5">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-6">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-7">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-8">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-9">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-10">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-11">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-12">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-13">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-14">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-15">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-16">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-17">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-18">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-19">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-20">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-21">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-22">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-23">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-24">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-25">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-26">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-27">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-28">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-29">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-30">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-31">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-32">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-33">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-34">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="board-card">
+                        <div class="board-card-front">
+                            <i class="fas fa-question"></i>
+                        </div>
+                        <div class="board-card-back" id="card-35">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="game-score">
+        <h1 class="score">CURRENT POINT <SCORE></SCORE></H1>
+        <P  class="score" id="point-count">00</P>
+        <h1 class="score" >CLICK COUNT</h1>
+        <P  class="score" id="click-count">00</P>
+        <audio autoplay controls>
+            <source src="./song/ss.mp3">
+        </audio>
+    </div>
+
+</div>
+
+
+</audio>
+</body>
+</html>

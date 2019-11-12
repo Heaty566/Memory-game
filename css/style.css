@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #17242a;
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to right, #36D1DC, #5B86E5); }
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  height: 100vh;
+  width: 100%; }
+
+.container .game-title {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 3px solid black; }
+
+.container .game-title h1 {
+  margin: 0 10px;
+  font-size: 3em; }
+
+.container .game-title i {
+  font-size: 3em;
+  margin: 0 10px; }
+
+.container .game-body {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 11;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.container .game-body table {
+  border-spacing: 5px; }
+
+.container .game-body table td {
+  height: 6em;
+  width: 6em; }
+
+.container .game-body table td .board-card {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #def2f1; }
+
+.container .game-body table td .board-card .board-card-front, .container .game-body table td .board-card .board-card-back {
+  position: absolute;
+  backface-visibility: hidden; }
+
+.container .game-body table td .board-card .board-card-front i, .container .game-body table td .board-card .board-card-back i {
+  font-size: 30px; }
+
+.container .game-body table td .board-card .board-card-back {
+  transform: rotateY(180deg); }
+
+.container .game-body table td .board-card.flip {
+  transform: rotateY(180deg); }
+
+.container .game-score {
+  border-left: black 3px solid;
+  grid-row-start: 2;
+  grid-row-end: 11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.container .game-score .score {
+  padding: 10px;
+  margin: 5px; }
+
+.container .game-score h1 {
+  font-size: 2em; }
+
+.container .game-score p {
+  font-size: 2em; }
+
+/*# sourceMappingURL=style.css.map */
